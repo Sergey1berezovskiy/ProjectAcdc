@@ -4,4 +4,12 @@
 
 <web-app>
     <display-name>Archetype Created Web Application</display-name>
+    <servlet>
+        <servlet-name>QuestServlet</servlet-name>
+        <jsp-file>/quests.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QuestServlet</servlet-name>
+        <url-pattern>/quests</url-pattern>
+    </servlet-mapping>
 </web-app>

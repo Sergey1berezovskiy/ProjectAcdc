@@ -1,10 +1,20 @@
 package com.javarush.berezovskiy.entity;
+import com.javarush.berezovskiy.constants.Constants;
+
 import java.util.Map;
 
 public class QuestForrestStory extends Quest {
+    private final String name;
     public QuestForrestStory(User user) {
         super(user);
+        this.name = Constants.QUEST_FORREST_NAME;
     }
+
+    @Override
+    public String getQuestName() {
+        return this.name;
+    }
+
     protected Map<Integer, String> makeStory(){
         return Map.of(
                 0, "%s проснулся посреди обломков. В животе урчит.".formatted(getUserName()),

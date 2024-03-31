@@ -9,9 +9,14 @@
     <title>Quests</title>
 </head>
 <body>
-<h1>Hello, world!</h1>
-<h2>Bye-bye</h2>
+<h1>Quest World</h1>
+<h3>Hello! You'll be able to find here a lot of quests in the future</h3>
 
-<button onclick="window.location='/logic?click'"></button>
+
+<form action ="quest" method="post">
+<label for="name">Enter your name:</label>
+<input type="text" id="name" name="name" placeholder="Name" required>
+<input type="submit" value="Start the story">
+</form>
 </body>
 </html>

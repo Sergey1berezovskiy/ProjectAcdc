@@ -2,8 +2,6 @@ package com.javarush.berezovskiy.entity;
 
 import com.javarush.berezovskiy.constants.Constants;
 import lombok.Getter;
-
-import java.util.HashMap;
 import java.util.Map;
 
 @Getter
@@ -26,6 +24,8 @@ public abstract class Quest {
     protected abstract Map<Integer, String> makeStoryAfterInvalidVariant();
     protected abstract Map<Integer, String> makeValidAnswers();
     protected abstract Map<Integer, String> makeInvalidAnswers();
+
+    public abstract String getQuestName();
 
     protected String getUserName(){
         if(getUser().getName() != null && !getUser().getName().isBlank())
