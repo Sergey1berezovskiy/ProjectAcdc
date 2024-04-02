@@ -111,12 +111,12 @@ class QuestServiceTest {
     }
 
     @Test
-    void WhenQuestIsNull_ThenGetNPE() {
+    void whenQuestIsNull_ThenGetNPE() {
         assertThrows(NullPointerException.class, () -> questService.writeStory(null, 1));
     }
 
     @Test
-    void WhenStepIsNegative_ThenGetNull() {
+    void whenStepIsNegative_ThenGetNull() {
         Map<Integer, String> emptyStoryMap = new HashMap<>();
         Mockito.when(mockQuest.getStoryMap()).thenReturn(emptyStoryMap);
         Mockito.when(mockQuest.getValidAnswers()).thenReturn(emptyStoryMap);
