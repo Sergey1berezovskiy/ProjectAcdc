@@ -1,7 +1,6 @@
 package com.javarush.berezovskiy.controller;
 
 import com.javarush.berezovskiy.constants.Constants;
-import com.javarush.berezovskiy.entity.User;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;

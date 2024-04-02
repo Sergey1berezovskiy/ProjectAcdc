@@ -2,6 +2,7 @@ package com.javarush.berezovskiy.service;
 
 import com.javarush.berezovskiy.entity.Quest;
 import com.javarush.berezovskiy.entity.QuestForrestStory;
+import com.javarush.berezovskiy.entity.QuestSpaceStory;
 import com.javarush.berezovskiy.entity.User;
 import lombok.Getter;
 
@@ -14,7 +15,7 @@ public class QuestBuilder {
     public QuestBuilder(User user){
         questMap = Map.of(
                 0, new QuestForrestStory(user),
-                1, new QuestForrestStory(user)
+                1, new QuestSpaceStory(user)
         );
     }
 }
